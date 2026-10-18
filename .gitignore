@@ -1,0 +1,45 @@
+# Terraform working directory
+.terraform/
+
+# Terraform state and backups
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform variable files
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Terraform plans and crash logs
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+
+# Generated Lambda deployment packages
+validate_image.zip
+analyze_image.zip
+save_results.zip
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# macOS
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
