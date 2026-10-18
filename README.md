@@ -12,7 +12,8 @@ The pipeline is fully serverless, provisioned with Terraform, and monitored thro
 
 ## Architecture
 
-![Week 33 Architecture](assets/architecture.png)
+<img width="1440" height="900" alt="Screenshot 2026-10-18 at 1 28 05 AM" src="https://github.com/user-attachments/assets/447475ff-6e05-4ad9-b05a-7bfdc5a7359f" />
+
 
 ### Request Flow
 
@@ -242,6 +243,21 @@ Finally, this project reinforced the benefits of managing cloud infrastructure w
 ## Outcome
 
 Successfully built and deployed an event-driven, serverless image intelligence pipeline orchestrated by AWS Step Functions. Uploaded images automatically trigger a multi-stage workflow that validates the image, analyzes it with Amazon Rekognition, and stores the labeled results in DynamoDB. The pipeline is fully managed with Terraform and observable through Step Functions execution history and CloudWatch Logs.
+
+---
+## Screenshots
+
+Step Function Workflow
+<img width="1440" height="900" alt="01-step-functions-workflow" src="https://github.com/user-attachments/assets/7c9cd903-4e12-4292-9fe6-21fb54831c4a" />
+
+Successful Workflow Execution
+<img width="1440" height="791" alt="02-successful-workflow-execution" src="https://github.com/user-attachments/assets/a8ff1e58-2e20-4bfa-a3f1-32001958701a" />
+
+Amazon Rekognition results in DynamoDB
+<img width="1440" height="785" alt="analysis results" src="https://github.com/user-attachments/assets/4899bb1c-426d-4de1-9064-d9a944377445" />
+
+EventBridge target and rule
+<img width="1440" height="900" alt="EventBridge" src="https://github.com/user-attachments/assets/e1bfc039-a7f8-4791-ad2b-07bbd3c2c256" />
 
 ---
 
